@@ -15,12 +15,15 @@
 :root {
   --background-black: #0f1210;
   --background-black-light: #161a17;
+  --background-gray: #181C1A;
+  --gray-green: #1F2623;
   --text-black: #021909;
   --button-black: #0e110f;
   --text-dark-green: #707e77;
   --spectra-green-light: #26ca57;
   --spectra-green-extra-light: #31d223;
   --spectra-green-light-opacity: #192b1d;
+  
 }
 
 body {
@@ -44,13 +47,18 @@ h1 {
 
 h5 {
   font-family: "Helvetica Now Text";
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h2,
 h6 {
   font-family: "Helvetica Now Display";
   font-weight: 400;
+}
+
+span {
+ font-family: "Helvetica Now Micro";
+ font-weight: 300;
 }
 
 hr {

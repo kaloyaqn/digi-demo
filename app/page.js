@@ -1,8 +1,10 @@
-import Image from "next/image";
-import Logo from "@/public/Vector.svg";
 import PrimaryButton from "@/components/Buttons/PrimaryButton";
 import SecondaryButton from "@/components/Buttons/SecondaryButton";
 import FeatureBlock from "@/components/Boxes/FeatureBlock";
+import ServiceCard from "@/components/Boxes/ServiceCard";
+
+//snimki
+
 
 export default function Home() {
   const features = [
@@ -28,6 +30,46 @@ export default function Home() {
       description: "High-quality design solutions at competitive prices.",
     },
   ];
+
+  const services = [
+    {
+      icon: "/images/services/product-design.png",
+      title: "Product Design",
+      description: "We prioritize creating products that users truly love and enjoy using.",
+      tools: ["Figma", "Miro"],
+    },
+    {
+      icon: "/images/services/ui-ux.png",
+      title: "Versatile Expertise",
+      description: "From landing pages to complex e-commerce and mobile apps.",
+      tools: ["Figma"], // Ensure consistent structure
+    },
+    {
+      icon: "/images/services/react-development.png",
+      title: "Rapid Delivery",
+      description: "Our process ensures quick turnaround without compromise.",
+      tools: ["Figma"], // Ensure consistent structure
+    },
+    {
+      icon: "/path/to/icon4.png",
+      title: "Affordable Excellence",
+      description: "High-quality design solutions at competitive prices.",
+      tools: ["Figma"], // Ensure consistent structure
+    },
+    {
+      icon: "/path/to/icon4.png",
+      title: "Affordable Excellence",
+      description: "High-quality design solutions at competitive prices.",
+      tools: ["Figma"], // Ensure consistent structure
+    },
+    {
+      icon: "/path/to/icon4.png",
+      title: "Affordable Excellence",
+      description: "High-quality design solutions at competitive prices.",
+      tools: ["Figma"], // Ensure consistent structure
+    },
+  ];
+
   return (
     <main className="">
       <section className="container mx-auto p-8 place-content-center custom-height-hero overflow-hidden">
@@ -57,7 +99,7 @@ export default function Home() {
             captivating mobile apps, eCommerce platforms, and landing product
             pages that drive success and user satisfaction.
           </h2>
-          <hr />
+          <hr/>
           <div className="flex flex-row mt-28">
             {features.map((feature, index) => (
               <FeatureBlock
@@ -69,6 +111,32 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="specializations bg-[var(--background-black)] section-padding">
+  <div className="container mx-auto">
+    <div className="flex justify-between items-end w-full pb-20">
+      <h6 className="uppercase text-xl">Specializations</h6>
+      <h2 className="text-5xl max-w-[900px] leading-[68px] text-right">
+        We specialize in delivering high-quality solutions with fast turnaround times.
+      </h2>
+    </div>
+    <hr />
+    <div className="flex overflow-x-auto space-x-8 pt-20 "> {/* Enable horizontal scrolling */}
+      {services.map((service, index) => (
+        <ServiceCard
+          key={index}
+          title={service.title}
+          description={service.description}
+          tools={service.tools}
+          icon={service.icon}
+          className=""  // Увеличи ширината на картите
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
     </main>
   );
 }
