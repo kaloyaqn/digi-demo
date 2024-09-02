@@ -1,6 +1,6 @@
 import React from "react";
 
-const FeatureBlock = ({key, title, description}) => {
+const FeatureBlock = ({ key, title, description }) => {
   return (
     <div>
       <div className="aspect-square rounded-full w-16 bg-[var(--spectra-green-light-opacity)] grid place-items-center ">
@@ -17,12 +17,8 @@ const FeatureBlock = ({key, title, description}) => {
           />
         </svg>
       </div>
-      <h5 className="pb-2 text-2xl pt-8 md:max-w-[375px]">
-       {title}
-      </h5>
-      <p className="text-[var(--text-dark-green)] text-xl">
-        {description}
-      </p>
+      <h5 className="pb-2 text-2xl pt-8 md:max-w-[375px]">{title}</h5>
+      <p className="text-[var(--text-dark-green)] text-xl">{description}</p>
     </div>
   );
 };

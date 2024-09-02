@@ -1,35 +1,35 @@
 @font-face {
-    font-family: 'Helvetica Now Text';
-    src: url('../public/fonts/Helvetica-Now-Text-Medium.otf');
-    font-weight: medium;
+  font-family: "Helvetica Now Text";
+  src: url("../public/fonts/Helvetica-Now-Text-Medium.otf");
+  font-weight: medium;
 }
 
 @font-face {
-    font-family: 'Helvetica Now Text';
-    src: url('../public/fonts/Helvetica-Now-Text.otf');
-    font-weight: 400;
+  font-family: "Helvetica Now Text";
+  src: url("../public/fonts/Helvetica-Now-Text.otf");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Helvetica Now Display';
-    src: url('../public/fonts/Helvetica-Now-Display.otf');
-    font-weight: 400;
+  font-family: "Helvetica Now Display";
+  src: url("../public/fonts/Helvetica-Now-Display.otf");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Helvetica Now Display';
-    src: url('../public//fonts/Helvetica-Now-Display-Bold.otf');
-    font-weight: 700;
+  font-family: "Helvetica Now Display";
+  src: url("../public//fonts/Helvetica-Now-Display-Bold.otf");
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Helvetica Now Display';
-    src: url("../public/fonts/Helvetica-Now-Display-Medium.otf");
-    font-weight: 500;
+  font-family: "Helvetica Now Display";
+  src: url("../public/fonts/Helvetica-Now-Display-Medium.otf");
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Helvetica Now Text';
-    src: url("../public/fonts/Helvetica-Now-Text-Medium.otf");
-    font-weight: 500;
+  font-family: "Helvetica Now Text";
+  src: url("../public/fonts/Helvetica-Now-Text-Medium.otf");
+  font-weight: 500;
 }

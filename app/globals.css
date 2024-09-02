@@ -10,22 +10,17 @@
 }
 
 @layer utilities {
-
 }
 
-
 :root {
-  --background-black: #0F1210; 
-  --background-black-light: #161A17;
+  --background-black: #0f1210;
+  --background-black-light: #161a17;
   --text-black: #021909;
-  --button-black: #0E110F;
-  --text-dark-green: #707E77;
-  --spectra-green-light: #26CA57; 
-  --spectra-green-extra-light: #31D223;
-  --spectra-green-light-opacity: #192B1D;
-  
-  
-
+  --button-black: #0e110f;
+  --text-dark-green: #707e77;
+  --spectra-green-light: #26ca57;
+  --spectra-green-extra-light: #31d223;
+  --spectra-green-light-opacity: #192b1d;
 }
 
 body {
@@ -34,55 +29,55 @@ body {
 }
 
 header {
-  font-family: 'Helvetica Now Text';
+  font-family: "Helvetica Now Text";
 }
 
 button {
-  font-family: 'Helvetica Now Display';
+  font-family: "Helvetica Now Display";
   font-weight: 500;
 }
 
 h1 {
-  font-family: 'Helvetica Now Display';
+  font-family: "Helvetica Now Display";
   font-weight: bold;
 }
 
 h5 {
-  font-family: 'Helvetica Now Text';
+  font-family: "Helvetica Now Text";
   font-weight: 500;
 }
 
-h2,h6 {
-  font-family: 'Helvetica Now Display';
-  font-weight: 400; 
+h2,
+h6 {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
 }
 
 hr {
-  border: 1px solid #FFFFFF1A
+  border: 1px solid #ffffff1a;
 }
 
 p {
-  font-family: 'Helvetica Now Text';
+  font-family: "Helvetica Now Text";
   font-weight: 400;
 }
 
 .custom-height-hero::after {
-  content: url('../public/Vector.svg');
+  content: url("../public/Vector.svg");
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   z-index: -1;
   height: 100vh;
 }
 
 .section-padding {
-  padding-top:10rem;
+  padding-top: 10rem;
   padding-bottom: 10rem;
 }
 
-
 .custom-height-hero {
-  height: calc(100vh - 8.5rem) ;
+  height: calc(100vh - 8.5rem);
   /* height: 100vh; */
 }
 
