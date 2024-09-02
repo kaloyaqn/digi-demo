@@ -16,11 +16,14 @@
 
 :root {
   --background-black: #0F1210; 
+  --background-black-light: #161A17;
   --text-black: #021909;
   --button-black: #0E110F;
   --text-dark-green: #707E77;
   --spectra-green-light: #26CA57; 
   --spectra-green-extra-light: #31D223;
+  --spectra-green-light-opacity: #192B1D;
+  
   
 
 }
@@ -28,7 +31,10 @@
 body {
   background: var(--background-black);
   color: white;
+}
 
+header {
+  font-family: 'Helvetica Now Text';
 }
 
 button {
@@ -41,22 +47,43 @@ h1 {
   font-weight: bold;
 }
 
-.hero p {
+h5 {
+  font-family: 'Helvetica Now Text';
+  font-weight: 500;
+}
+
+h2,h6 {
+  font-family: 'Helvetica Now Display';
+  font-weight: 400; 
+}
+
+hr {
+  border: 1px solid #FFFFFF1A
+}
+
+p {
   font-family: 'Helvetica Now Text';
   font-weight: 400;
 }
 
-.hero .buttons-container::after {
+.custom-height-hero::after {
   content: url('../public/Vector.svg');
   position: absolute;
   top:0;
   right:0;
   z-index: -1;
+  height: 100vh;
+}
+
+.section-padding {
+  padding-top:10rem;
+  padding-bottom: 10rem;
 }
 
 
 .custom-height-hero {
-  height: calc(100dvh - 8.5rem) !important;
+  height: calc(100vh - 8.5rem) ;
+  /* height: 100vh; */
 }
 
 @layer utilities {
