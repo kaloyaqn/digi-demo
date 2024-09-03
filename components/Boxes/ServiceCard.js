@@ -1,14 +1,15 @@
 import Image from "next/image";
 import React from "react";
+import ToolBadge from "./ToolBadge";
 
 const toolIcons = {
   Figma: "images/services/icons/figma.svg",
   Miro: "images/services/icons/miro.svg",
 };
 
-const ServiceCard = ({ icon, title, description, tools }) => {
+const ServiceCard = ({ icon, title, description, tools, key }) => {
   return (
-    <div className="bg-[var(--background-gray)] rounded-[32px] flex-shrink-0 w-[450px] p-12 pb-10">
+    <div key={key} className="bg-[var(--background-gray)] rounded-[32px] flex-shrink-0 w-[450px] p-12 pb-10">
       <div>
         <img src={icon} alt={title} />
       </div>
@@ -18,13 +19,7 @@ const ServiceCard = ({ icon, title, description, tools }) => {
       </p>
       <div className="flex space-x-2 mt-8">
         {tools.map((tool, index) => (
-          <div
-            key={index}
-            className="md:text-[13px] rounded-full bg-[var(--gray-green)] py-2 px-3 rounded flex items-center gap-2"
-          >
-            <img src={toolIcons[tool]} />
-            <span className="opacity-40 text-white">{tool}</span>
-          </div>
+          <ToolBadge key={index} tool={tool} />
         ))}
       </div>
     </div>
