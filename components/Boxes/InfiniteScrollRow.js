@@ -19,7 +19,7 @@ const InfiniteScrollRow = () => {
           {tools.map((tool, index) => (
             <>
               <div className="md:mr-4">
-                <ToolBadge key={index} tool={tool} />
+                <ToolBadge isBig key={index} tool={tool} />
               </div>
             </>
           ))}
@@ -34,7 +34,7 @@ const InfiniteScrollRow = () => {
           {tools.map((tool, index) => (
             <>
               <div className="md:mr-4">
-                <ToolBadge key={index} tool={tool} />
+                <ToolBadge isBig key={index} tool={tool} />
               </div>
             </>
           ))}

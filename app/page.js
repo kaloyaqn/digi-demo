@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="technologies md:pt-12">
+      <section className="technologies relative md:pt-12">
         <div className="container mx-auto">
           <h2 className="text-5xl leading-[68px] md:max-w-3xl">
             Cutting-edge technology implemented in your next product
@@ -156,8 +156,10 @@ export default function Home() {
           </div>
           <hr className="md:my-20" />
         </div>
-        <InfiniteScrollRow />{" "}
-        {/* This is outside the container for full width */}
+          <div className="bg-circle-image md:pb-40">
+        <InfiniteScrollRow />
+
+        </div>
       </section>
     </main>
   );
