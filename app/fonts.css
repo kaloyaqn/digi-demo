@@ -45,3 +45,9 @@
     src: url("../public/fonts//Helvetica-Now-Micro-Light.otf");
     font-weight: 300;
 }
+
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url("../public/fonts/Helvetica-Now-Display-XBold.otf");
+    font-weight: 900;
+}

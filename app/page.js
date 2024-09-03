@@ -156,9 +156,18 @@ export default function Home() {
           </div>
           <hr className="md:my-20" />
         </div>
-          <div className="bg-circle-image md:pb-40">
-        <InfiniteScrollRow />
-
+        <div className="bg-circle-image md:pb-40">
+          <InfiniteScrollRow />
+        </div>
+      </section>
+      <section className="ai-driven bg-[var(--background-black-light)] rounded-t-[64px] md:pt-40 md:pb-36">
+        <div className="container mx-auto">
+            <img src="./images/ai-icon.svg" alt="Ai driven process" />
+            <h2 className="text-5xl md:max-w-6xl md:leading-[85px] md:mt-10">
+            Our 
+            <span className="font-black py-2 mx-2 px-6 bg-[var(--spectra-green-light)] rounded-full text-black"> AI-driven </span>
+            processes enhance creativity, streamline workflows, and deliver cutting-edge solutions tailored to your unique needs.
+            </h2>
         </div>
       </section>
     </main>
