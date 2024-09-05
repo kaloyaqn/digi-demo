@@ -5,6 +5,7 @@ import ServiceCard from "@/components/Boxes/ServiceCard";
 
 import Marquee from "react-fast-marquee";
 import InfiniteScrollRow from "@/components/Boxes/InfiniteScrollRow";
+import ServicesCarousel from "@/components/Carousel/ServicesCarousel";
 
 //snimki
 
@@ -45,31 +46,31 @@ export default function Home() {
       icon: "/images/services/ui-ux.png",
       title: "Versatile Expertise",
       description: "From landing pages to complex e-commerce and mobile apps.",
-      tools: ["Figma"], // Ensure consistent structure
+      tools: ["Figma"], 
     },
     {
       icon: "/images/services/react-development.png",
       title: "Rapid Delivery",
       description: "Our process ensures quick turnaround without compromise.",
-      tools: ["Figma"], // Ensure consistent structure
+      tools: ["Figma"], 
+    },
+    {
+      icon: "/images/services/ui-ux.png",
+      title: "Versatile Expertise",
+      description: "From landing pages to complex e-commerce and mobile apps.",
+      tools: ["Miro"], 
     },
     {
       icon: "/path/to/icon4.png",
       title: "Affordable Excellence",
       description: "High-quality design solutions at competitive prices.",
-      tools: ["Figma"], // Ensure consistent structure
+      tools: ["Figma"], 
     },
     {
       icon: "/path/to/icon4.png",
       title: "Affordable Excellence",
       description: "High-quality design solutions at competitive prices.",
-      tools: ["Figma"], // Ensure consistent structure
-    },
-    {
-      icon: "/path/to/icon4.png",
-      title: "Affordable Excellence",
-      description: "High-quality design solutions at competitive prices.",
-      tools: ["Figma"], // Ensure consistent structure
+      tools: ["Figma"], 
     },
   ];
 
@@ -124,19 +125,8 @@ export default function Home() {
             </h2>
           </div>
           <hr />
-          <div className="flex overflow-x-auto space-x-8 pt-20 ">
-            {" "}
-            {/* Enable horizontal scrolling */}
-            {services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                title={service.title}
-                description={service.description}
-                tools={service.tools}
-                icon={service.icon}
-                className="" // Увеличи ширината на картите
-              />
-            ))}
+          <div class="w-screen pt-20">     
+              <ServicesCarousel Slides={services} SlidesToShow={"4"} Spacing={"15"}/>
           </div>
         </div>
       </section>
