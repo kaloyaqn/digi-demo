@@ -4,6 +4,8 @@ const FeatureBlock = ({ key, title, description }) => {
   return (
     <div>
       <div className="aspect-square rounded-full w-16 bg-[var(--spectra-green-light-opacity)] grid place-items-center ">
+
+        {/* da go napravish reusable img */}
         <svg
           width="32"
           height="32"

@@ -7,9 +7,9 @@ import "swiper/css";
 
 function ServicesCarousel({Slides, Spacing, SlidesToShow})  {
     return (
-        <Swiper slidesPerView={SlidesToShow} spaceBetween={Spacing}>
+        <Swiper slidesPerView={"auto"} spaceBetween={Spacing}>
             {Slides.map((Slide, index) => (
-                <SwiperSlide key={index} className='!h-auto'>              
+                <SwiperSlide key={index} className='!h-auto !w-[25%]'>              
                     <ServiceCard
                     title={Slide.title}
                     description={Slide.description}

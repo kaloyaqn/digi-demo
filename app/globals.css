@@ -57,6 +57,10 @@ h6 {
   font-weight: 400;
 }
 
+h2 span {
+  font-family: "Helvetica Now Display";
+  font-weight: 400;
+}
 span {
   font-family: "Helvetica Now Micro";
   font-weight: 300;
@@ -72,12 +76,17 @@ p {
 }
 
 .custom-height-hero::after {
-  content: url("../public/Vector.svg");
+  content: "";
+  background-image: url(/_next/static/media/Vector.aff19053.svg);
   position: absolute;
   top: 0;
   right: 0;
   z-index: -1;
   height: 100vh;
+  width: 100%;
+  background-position: right top;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .section-padding {

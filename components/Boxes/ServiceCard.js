@@ -9,7 +9,7 @@ const toolIcons = {
 
 const ServiceCard = ({ icon, title, description, tools, key }) => {
   return (
-    <div key={key} className="bg-[var(--background-gray)] rounded-[32px] flex-shrink-0 w-[450px] p-12 pb-10">
+    <div key={key} className="bg-[var(--background-gray)] rounded-[32px] flex-shrink-0 w-[100%] h-full p-12 pb-10">
       <div>
         <img src={icon} alt={title} />
       </div>
