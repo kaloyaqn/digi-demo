@@ -236,19 +236,19 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 md:grid-rows-2 md:gap-x-8 md:gap-y-20 md:gap-8 md:mt-20 md:mb-[120px]">
             {portfolios.map((portoflio, index) => (
-              <PortfolioCard 
-              key={index}
-              image={portoflio.image}
-              title={portoflio.title}
-              work={portoflio.work}
-              brand={portoflio.brand}
+              <PortfolioCard
+                key={index}
+                image={portoflio.image}
+                title={portoflio.title}
+                work={portoflio.work}
+                brand={portoflio.brand}
               />
             ))}
           </div>
           <div className="flex justify-center flex-col items-center">
             <Link href="https://www.dribbble.com">
-          <PrimaryButton isBig>See more on Dribbble</PrimaryButton>
-          </Link>
+              <PrimaryButton isBig>See more on Dribbble</PrimaryButton>
+            </Link>
           </div>
         </div>
       </section>
