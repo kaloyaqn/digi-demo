@@ -2,11 +2,24 @@ import React from "react";
 import Image from "next/image";
 
 // ToolBadge Component
-const ToolBadge = ({ tool, isBig }) => {
+const ToolBadge = ({ tool, isBig, isTransparent }) => {
   const toolIcons = {
     Figma: "images/services/icons/figma.svg",
     Miro: "images/services/icons/miro.svg",
   };
+
+  if (isTransparent) {
+    return (
+      <div className="flex items-center gap-2 p-2 border border-gray-300 rounded-md">
+        <img
+          src={toolIcons[tool]}
+          alt={tool}
+          className="w-6 h-6 opacity-70"
+        />
+        <span className="text-gray-500">{tool}</span>
+      </div>
+    );
+  }
 
   return (
     <>

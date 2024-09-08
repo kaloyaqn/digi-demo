@@ -52,6 +52,7 @@ h5 {
 
 h2,
 h3,
+h4,
 h6 {
   font-family: "Helvetica Now Display";
   font-weight: 400;
@@ -61,8 +62,8 @@ h2 span {
   font-family: "Helvetica Now Display";
   font-weight: 400;
 }
-span {
-  font-family: "Helvetica Now Micro";
+span, small {
+  font-family: "Helvetica Now Display";
   font-weight: 300;
 }
 
@@ -77,7 +78,7 @@ p {
 
 .custom-height-hero::after {
   content: "";
-  background-image: url(/_next/static/media/Vector.aff19053.svg);
+  background-image: url("../public/Vector.svg");
   position: absolute;
   top: 0;
   right: 0;
