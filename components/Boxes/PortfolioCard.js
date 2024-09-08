@@ -1,7 +1,11 @@
 import React from "react";
 import Label from "./Label";
+import Link from "next/link";
 
-const PortfolioCard = ({image, title, work, brand}) => {
+const PortfolioCard = ({image, title, work, brand, link}) => {
+
+
+
   return (
     <div className="">
       <img
@@ -13,6 +17,7 @@ const PortfolioCard = ({image, title, work, brand}) => {
         <h4 className="md:text-xl">{title}</h4>
         <div className="flex items-end justify-between mt-2">
           <Label>{brand}</Label>
+          <Link href={link}>
           <button className="rounded-full group bg-[var(--spectra-green-light)] w-10 h-10 flex justify-center items-center">
             <svg
               className="transform transition-transform duration-300 group-hover:rotate-45"
@@ -28,6 +33,7 @@ const PortfolioCard = ({image, title, work, brand}) => {
               />
             </svg>
           </button>
+          </Link>
         </div>
         <hr className="md:mt-6"/>
       </div>

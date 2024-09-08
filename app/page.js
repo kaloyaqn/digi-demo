@@ -81,36 +81,42 @@ export default function Home() {
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
+    },
+    {
+      image: "https://cdn.dribbble.com/users/4880846/screenshots/12922228/media/1e6080ee9517712c325527db6f78e545.png?resize=1000x750&vertical=center",
+      title: "Personal Portfolio And Rebranding",
+      work: ["UI Design & Web Development"],
+      brand: "ZFLOW",
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
     },
     {
       image: "/images/portfolio.png",
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
     },
     {
       image: "/images/portfolio.png",
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
     },
     {
       image: "/images/portfolio.png",
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
     },
     {
       image: "/images/portfolio.png",
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
-    },
-    {
-      image: "/images/portfolio.png",
-      title: "Social Non-profit Landing Page",
-      work: ["UI Design"],
-      brand: "HeartBeat",
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
     },
   ];
 
@@ -235,13 +241,14 @@ export default function Home() {
             </svg>
           </h2>
           <div className="grid md:grid-cols-3 md:grid-rows-2 md:gap-x-8 md:gap-y-20 md:gap-8 md:mt-20 md:mb-[120px]">
-            {portfolios.map((portoflio, index) => (
+            {portfolios.map((portfolio, index) => (
               <PortfolioCard
                 key={index}
-                image={portoflio.image}
-                title={portoflio.title}
-                work={portoflio.work}
-                brand={portoflio.brand}
+                image={portfolio.image}
+                title={portfolio.title}
+                work={portfolio.work}
+                brand={portfolio.brand}
+                link={portfolio.link}
               />
             ))}
           </div>
