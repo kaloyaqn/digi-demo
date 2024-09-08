@@ -6,6 +6,7 @@ import ServiceCard from "@/components/Boxes/ServiceCard";
 import InfiniteScrollRow from "@/components/Boxes/InfiniteScrollRow";
 import ServicesCarousel from "@/components/Carousel/ServicesCarousel";
 import PortfolioCard from "@/components/Boxes/PortfolioCard";
+import Link from "next/link";
 
 //snimki
 
@@ -233,7 +234,7 @@ export default function Home() {
               />
             </svg>
           </h2>
-          <div className="grid grid-cols-3 grid-rows-2 gap-x-8 gap-y-20 gap-8 md:mt-20 md:mb-[120px]">
+          <div className="grid md:grid-cols-3 md:grid-rows-2 md:gap-x-8 md:gap-y-20 md:gap-8 md:mt-20 md:mb-[120px]">
             {portfolios.map((portoflio, index) => (
               <PortfolioCard 
               key={index}
@@ -245,8 +246,9 @@ export default function Home() {
             ))}
           </div>
           <div className="flex justify-center flex-col items-center">
+            <Link href="https://www.dribbble.com">
           <PrimaryButton isBig>See more on Dribbble</PrimaryButton>
-
+          </Link>
           </div>
         </div>
       </section>
