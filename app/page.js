@@ -7,6 +7,7 @@ import InfiniteScrollRow from "@/components/Boxes/InfiniteScrollRow";
 import ServicesCarousel from "@/components/Carousel/ServicesCarousel";
 import PortfolioCard from "@/components/Boxes/PortfolioCard";
 import Link from "next/link";
+import TestemonialBlock from "@/components/Boxes/TestemonialBlock";
 
 //snimki
 
@@ -81,42 +82,69 @@ export default function Home() {
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
     },
     {
-      image: "https://cdn.dribbble.com/users/4880846/screenshots/12922228/media/1e6080ee9517712c325527db6f78e545.png?resize=1000x750&vertical=center",
+      image:
+        "https://cdn.dribbble.com/users/4880846/screenshots/12922228/media/1e6080ee9517712c325527db6f78e545.png?resize=1000x750&vertical=center",
       title: "Personal Portfolio And Rebranding",
       work: ["UI Design & Web Development"],
       brand: "ZFLOW",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
     },
     {
       image: "/images/portfolio.png",
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
     },
     {
       image: "/images/portfolio.png",
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
     },
     {
       image: "/images/portfolio.png",
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
     },
     {
       image: "/images/portfolio.png",
       title: "Social Non-profit Landing Page",
       work: ["UI Design"],
       brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share"
+      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
+    },
+  ];
+
+  const testemonials = [
+    {
+      image: "/images/testemonial-pfp.png",
+      text: "The team at ideapeel provided exceptional service, integrating advanced features seamlessly and offering clear, scalable pricing options",
+      work: ["UI/UX Design", "Marketing"],
+      client: "Nikolay Vasilev",
+      position: "CEO @ Loop Marketing Agency"
+    },
+    {
+      image: "https://i1.sndcdn.com/avatars-Q06tFvmrjtEefnd5-MpP9Gg-t240x240.jpg",
+      text: "Teq ot Spectra sa top! Vsichko integrirat, bez ebavki. Ceni chestni kato kesha. Ako iskаsh da si nomer 1, Spectra e igrachut!",
+      work: ["UI/UX Design", "Marketing"],
+      client: "Alexander Pashaliev",
+      position: "CEO @ MBT"
+
+    },
+    {
+      image: "/images/testemonial-pfp.png",
+      text: "The team at ideapeel provided exceptional service, integrating advanced features seamlessly and offering clear, scalable pricing options",
+      work: ["UI/UX Design", "Marketing"],
+      client: "Nikolay Vasilev",
+      position: "CEO @ Loop Marketing Agency"
+
     },
   ];
 
@@ -219,7 +247,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section class="projects md:pt-40 text-white">
+      <section className="projects md:pt-40 text-white">
         <div class="container mx-auto ">
           <h2 class="text-6xl md:max-w-xl md:leading-[85px]">
             See some of our projects on {""}
@@ -256,6 +284,79 @@ export default function Home() {
             <Link href="https://www.dribbble.com">
               <PrimaryButton isBig>See more on Dribbble</PrimaryButton>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="cta-section bg-[#0D5221] section-padding md:pt-40 md:mt-40 rounded-t-[64px]">
+        <div className="container mx-auto ">
+          <div className="md:max-w-2xl">
+            <h2 className="md:text-6xl md:leading-[85px] tracking-wide md:mb-6">
+              Ready to start something amazing?
+            </h2>
+            <p className="md:text-2xl opacity-70 text-white md:mb-16">
+              Leveraging AI to write cleaner, more efficient code and automate
+              testing processes.
+            </p>
+            <PrimaryButton isCta>Explore our pricing</PrimaryButton>
+          </div>
+        </div>
+      </section>
+      <section className="testemotials bg-[#0C2D15] section-padding">
+        <div className="container mx-auto">
+          <div className="flex items-end justify-between">
+            <h2 className="md:text-6xl md:max-w-[600px] md:leading-[85px]">
+              Our clients are in love with our work
+            </h2>
+            <div className="buttons">
+              <svg
+                width="216"
+                height="96"
+                viewBox="0 0 216 96"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="48"
+                  cy="48"
+                  r="47"
+                  transform="rotate(-180 48 48)"
+                  stroke="#26CA57"
+                  stroke-width="2"
+                />
+                <circle
+                  cx="168"
+                  cy="48"
+                  r="47"
+                  stroke="#26CA57"
+                  stroke-width="2"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M55.3172 59.6698L38.2291 59.6698C37.1805 59.6698 36.3305 58.8198 36.3305 57.7712L36.3305 40.6831C36.3305 39.6345 37.1805 38.7845 38.2291 38.7845C39.2777 38.7845 40.1278 39.6345 40.1278 40.6831L40.1278 53.1874L57.7709 35.5443L60.456 38.2294L42.8129 55.8725L55.3172 55.8725C56.3658 55.8725 57.2158 56.7226 57.2158 57.7712C57.2158 58.8198 56.3658 59.6698 55.3172 59.6698Z"
+                  fill="#26CA57"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M160.683 36.3302L177.771 36.3302C178.819 36.3302 179.67 37.1802 179.67 38.2288L179.67 55.3169C179.67 56.3655 178.819 57.2155 177.771 57.2155C176.722 57.2155 175.872 56.3655 175.872 55.3169V42.8126L158.229 60.4557L155.544 57.7706L173.187 40.1275L160.683 40.1275C159.634 40.1275 158.784 39.2774 158.784 38.2288C158.784 37.1802 159.634 36.3302 160.683 36.3302Z"
+                  fill="#26CA57"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="w-screen md:pt-20 flex flex-row gap-8">
+          {testemonials.map((testemonial, index) => (
+              <TestemonialBlock 
+                key={index}
+                text={testemonial.text}
+                client={testemonial.client}
+                work={testemonial.work}
+                image={testemonial.image}
+                position={testemonial.position}
+              />
+            ))}
           </div>
         </div>
       </section>
