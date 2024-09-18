@@ -1,3 +1,5 @@
+//services
+
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -7,7 +9,9 @@ import ServiceCard from '../Boxes/ServiceCard';
 
 function ServicesCarousel({Slides, Spacing, SlidesToShow})  {
     return (
-        <Swiper slidesPerView={"auto"} spaceBetween={Spacing}>
+        <Swiper 
+        loop={true}
+        slidesPerView={"auto"} spaceBetween={Spacing}>
             {Slides.map((Slide, index) => (
                 <SwiperSlide key={index} className='!h-auto !w-[25%]'>              
                     <ServiceCard

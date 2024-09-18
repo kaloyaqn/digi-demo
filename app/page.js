@@ -9,147 +9,150 @@ import PortfolioCard from "@/components/Boxes/PortfolioCard";
 import Link from "next/link";
 import TestemonialBlock from "@/components/Boxes/TestemonialBlock";
 import PricingCard from "@/components/Boxes/PricingCard";
+import TestemonialCarousel from "@/components/Carousel/TestemonialCarousel";
 
 //snimki
+const features = [
+  {
+    icon: "/path/to/icon1.png",
+    title: "User-Centric Approach",
+    description:
+      "We prioritize creating products that users truly love and enjoy using.",
+  },
+  {
+    icon: "/path/to/icon2.png",
+    title: "Versatile Expertise",
+    description: "From landing pages to complex e-commerce and mobile apps.",
+  },
+  {
+    icon: "/path/to/icon3.png",
+    title: "Rapid Delivery",
+    description: "Our process ensures quick turnaround without compromise.",
+  },
+  {
+    icon: "/path/to/icon4.png",
+    title: "Affordable Excellence",
+    description: "High-quality design solutions at competitive prices.",
+  },
+];
 
+const services = [
+  {
+    icon: "/images/services/product-design.png",
+    title: "Product Design",
+    description:
+      "We prioritize creating products that users truly love and enjoy using.",
+    tools: ["Figma", "Miro"],
+  },
+  {
+    icon: "/images/services/ui-ux.png",
+    title: "Versatile Expertise",
+    description: "From landing pages to complex e-commerce and mobile apps.",
+    tools: ["Figma"],
+  },
+  {
+    icon: "/images/services/react-development.png",
+    title: "Rapid Delivery",
+    description: "Our process ensures quick turnaround without compromise.",
+    tools: ["Figma"],
+  },
+  {
+    icon: "/images/services/ui-ux.png",
+    title: "Versatile Expertise",
+    description: "From landing pages to complex e-commerce and mobile apps.",
+    tools: ["Miro"],
+  },
+  {
+    icon: "/path/to/icon4.png",
+    title: "Affordable Excellence",
+    description: "High-quality design solutions at competitive prices.",
+    tools: ["Figma"],
+  },
+  {
+    icon: "/path/to/icon4.png",
+    title: "Affordable Excellence",
+    description: "High-quality design solutions at competitive prices.",
+    tools: ["Figma"],
+  },
+];
+
+const portfolios = [
+  {
+    image: "/images/portfolio.png",
+    title: "Social Non-profit Landing Page",
+    work: ["UI Design"],
+    brand: "HeartBeat",
+    link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
+  },
+  {
+    image:
+      "https://cdn.dribbble.com/users/4880846/screenshots/12922228/media/1e6080ee9517712c325527db6f78e545.png?resize=1000x750&vertical=center",
+    title: "Personal Portfolio And Rebranding",
+    work: ["UI Design & Web Development"],
+    brand: "ZFLOW",
+    link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
+  },
+  {
+    image: "/images/portfolio.png",
+    title: "Social Non-profit Landing Page",
+    work: ["UI Design"],
+    brand: "HeartBeat",
+    link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
+  },
+  {
+    image: "/images/portfolio.png",
+    title: "Social Non-profit Landing Page",
+    work: ["UI Design"],
+    brand: "HeartBeat",
+    link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
+  },
+  {
+    image: "/images/portfolio.png",
+    title: "Social Non-profit Landing Page",
+    work: ["UI Design"],
+    brand: "HeartBeat",
+    link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
+  },
+  {
+    image: "/images/portfolio.png",
+    title: "Social Non-profit Landing Page",
+    work: ["UI Design"],
+    brand: "HeartBeat",
+    link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
+  },
+];
+
+const testemonials = [
+  {
+    image: "/images/testemonial-pfp.png",
+    text: "The team at ideapeel provided exceptional service, integrating advanced features seamlessly and offering clear, scalable pricing options",
+    work: ["UI/UX Design", "Marketing"],
+    client: "Nikolay Vasilev",
+    position: "CEO @ Loop Marketing Agency",
+  },
+  {
+    image: "https://i1.sndcdn.com/avatars-Q06tFvmrjtEefnd5-MpP9Gg-t240x240.jpg",
+    text: "Teq ot Spectra sa top! Vsichko integrirat, bez ebavki. Ceni chestni kato kesha. Ako iskash da si nomer 1, Spectra e igrachut!",
+    work: ["V tumnoto durpame", "Beliq demon"],
+    client: "Alexander Pashaliev",
+    position: "CEO @ MBT",
+  },
+  {
+    image: "/images/testemonial-pfp.png",
+    text: "The team at ideapeel provided exceptional service, integrating advanced features seamlessly and offering clear, scalable pricing options",
+    work: ["UI/UX Design", "Marketing"],
+    client: "Nikolay Vasilev",
+    position: "CEO @ Loop Marketing Agency",
+  },
+  {
+    image: "/images/testemonial-pfp.png",
+    text: "The team at ideapeel provided exceptional service, integrating advanced features seamlessly and offering clear, scalable pricing options",
+    work: ["UI/UX Design", "Marketing"],
+    client: "Nikolay Vasilev",
+    position: "CEO @ Loop Marketing Agency",
+  },
+];
 export default function Home() {
-  const features = [
-    {
-      icon: "/path/to/icon1.png",
-      title: "User-Centric Approach",
-      description:
-        "We prioritize creating products that users truly love and enjoy using.",
-    },
-    {
-      icon: "/path/to/icon2.png",
-      title: "Versatile Expertise",
-      description: "From landing pages to complex e-commerce and mobile apps.",
-    },
-    {
-      icon: "/path/to/icon3.png",
-      title: "Rapid Delivery",
-      description: "Our process ensures quick turnaround without compromise.",
-    },
-    {
-      icon: "/path/to/icon4.png",
-      title: "Affordable Excellence",
-      description: "High-quality design solutions at competitive prices.",
-    },
-  ];
-
-  const services = [
-    {
-      icon: "/images/services/product-design.png",
-      title: "Product Design",
-      description:
-        "We prioritize creating products that users truly love and enjoy using.",
-      tools: ["Figma", "Miro"],
-    },
-    {
-      icon: "/images/services/ui-ux.png",
-      title: "Versatile Expertise",
-      description: "From landing pages to complex e-commerce and mobile apps.",
-      tools: ["Figma"],
-    },
-    {
-      icon: "/images/services/react-development.png",
-      title: "Rapid Delivery",
-      description: "Our process ensures quick turnaround without compromise.",
-      tools: ["Figma"],
-    },
-    {
-      icon: "/images/services/ui-ux.png",
-      title: "Versatile Expertise",
-      description: "From landing pages to complex e-commerce and mobile apps.",
-      tools: ["Miro"],
-    },
-    {
-      icon: "/path/to/icon4.png",
-      title: "Affordable Excellence",
-      description: "High-quality design solutions at competitive prices.",
-      tools: ["Figma"],
-    },
-    {
-      icon: "/path/to/icon4.png",
-      title: "Affordable Excellence",
-      description: "High-quality design solutions at competitive prices.",
-      tools: ["Figma"],
-    },
-  ];
-
-  const portfolios = [
-    {
-      image: "/images/portfolio.png",
-      title: "Social Non-profit Landing Page",
-      work: ["UI Design"],
-      brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
-    },
-    {
-      image:
-        "https://cdn.dribbble.com/users/4880846/screenshots/12922228/media/1e6080ee9517712c325527db6f78e545.png?resize=1000x750&vertical=center",
-      title: "Personal Portfolio And Rebranding",
-      work: ["UI Design & Web Development"],
-      brand: "ZFLOW",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
-    },
-    {
-      image: "/images/portfolio.png",
-      title: "Social Non-profit Landing Page",
-      work: ["UI Design"],
-      brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
-    },
-    {
-      image: "/images/portfolio.png",
-      title: "Social Non-profit Landing Page",
-      work: ["UI Design"],
-      brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
-    },
-    {
-      image: "/images/portfolio.png",
-      title: "Social Non-profit Landing Page",
-      work: ["UI Design"],
-      brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
-    },
-    {
-      image: "/images/portfolio.png",
-      title: "Social Non-profit Landing Page",
-      work: ["UI Design"],
-      brand: "HeartBeat",
-      link: "https://dribbble.com/shots/12922228-ZFLOW-Personal-Portfolio-And-Rebranding?utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=tnvd&utm_content=ZFLOW%20-%20Personal%20Portfolio%20And%20Rebranding&utm_medium=Social_Share",
-    },
-  ];
-
-  const testemonials = [
-    {
-      image: "/images/testemonial-pfp.png",
-      text: "The team at ideapeel provided exceptional service, integrating advanced features seamlessly and offering clear, scalable pricing options",
-      work: ["UI/UX Design", "Marketing"],
-      client: "Nikolay Vasilev",
-      position: "CEO @ Loop Marketing Agency"
-    },
-    {
-      image: "https://i1.sndcdn.com/avatars-Q06tFvmrjtEefnd5-MpP9Gg-t240x240.jpg",
-      text: "Teq ot Spectra sa top! Vsichko integrirat, bez ebavki. Ceni chestni kato kesha. Ako iskаsh da si nomer 1, Spectra e igrachut!",
-      work: ["UI/UX Design", "Marketing"],
-      client: "Alexander Pashaliev",
-      position: "CEO @ MBT"
-
-    },
-    {
-      image: "/images/testemonial-pfp.png",
-      text: "The team at ideapeel provided exceptional service, integrating advanced features seamlessly and offering clear, scalable pricing options",
-      work: ["UI/UX Design", "Marketing"],
-      client: "Nikolay Vasilev",
-      position: "CEO @ Loop Marketing Agency"
-
-    },
-  ];
-
-
   return (
     <main className="overflow-x-hidden">
       <section className="container mx-auto p-8 place-content-center custom-height-hero overflow-hidden">
@@ -204,7 +207,7 @@ export default function Home() {
           <div class="w-screen pt-20">
             <ServicesCarousel
               Slides={services}
-              SlidesToShow={"4"}
+              SlidesToShow={3}
               Spacing={"30"}
             />
           </div>
@@ -306,79 +309,58 @@ export default function Home() {
       </section>
       <section className="testemotials bg-[#0C2D15] section-padding">
         <div className="container mx-auto">
-          <div className="flex items-end justify-between">
-            <h2 className="md:text-6xl md:max-w-[600px] md:leading-[85px]">
-              Our clients are in love with our work
-            </h2>
-            <div className="buttons">
-              <svg
-                width="216"
-                height="96"
-                viewBox="0 0 216 96"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="48"
-                  cy="48"
-                  r="47"
-                  transform="rotate(-180 48 48)"
-                  stroke="#26CA57"
-                  stroke-width="2"
-                />
-                <circle
-                  cx="168"
-                  cy="48"
-                  r="47"
-                  stroke="#26CA57"
-                  stroke-width="2"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M55.3172 59.6698L38.2291 59.6698C37.1805 59.6698 36.3305 58.8198 36.3305 57.7712L36.3305 40.6831C36.3305 39.6345 37.1805 38.7845 38.2291 38.7845C39.2777 38.7845 40.1278 39.6345 40.1278 40.6831L40.1278 53.1874L57.7709 35.5443L60.456 38.2294L42.8129 55.8725L55.3172 55.8725C56.3658 55.8725 57.2158 56.7226 57.2158 57.7712C57.2158 58.8198 56.3658 59.6698 55.3172 59.6698Z"
-                  fill="#26CA57"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M160.683 36.3302L177.771 36.3302C178.819 36.3302 179.67 37.1802 179.67 38.2288L179.67 55.3169C179.67 56.3655 178.819 57.2155 177.771 57.2155C176.722 57.2155 175.872 56.3655 175.872 55.3169V42.8126L158.229 60.4557L155.544 57.7706L173.187 40.1275L160.683 40.1275C159.634 40.1275 158.784 39.2774 158.784 38.2288C158.784 37.1802 159.634 36.3302 160.683 36.3302Z"
-                  fill="#26CA57"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="w-screen md:pt-20 flex flex-row gap-8">
-            {testemonials.map((testemonial, index) => (
-                <TestemonialBlock 
-                  key={index}
-                  text={testemonial.text}
-                  client={testemonial.client}
-                  work={testemonial.work}
-                  image={testemonial.image}
-                  position={testemonial.position}
-                />
-              ))}
-          </div>
+          <TestemonialCarousel
+            Slides={testemonials}
+            SlidesToShow={"3"}
+            Spacing={"30"}
+          />
         </div>
       </section>
       <section className="pricing bg-[#0F1210] section-padding">
         <div className="container mx-auto z-[1] relative">
           <h2 class="md:text-6xl w-full md:leading-[85px] mb-20 text-center">
             Chose your path
-            <br/>
+            <br />
             <span className="opacity-[55%]">and we will follow it</span>
           </h2>
           <div class="grid grid-cols-12 gap-8">
-              <div className="col-span-1"></div>
-              <div className="col-span-5">
-                <PricingCard  price="3,400" variant="white" packageName="Spectra Complete" workType="UI Design & Development" color="white"  works={['User Research', 'Market Research', 'Wireframing', 'Prototyping', 'React Development', 'Quality Assurance']} />
-              </div>
+            <div className="col-span-1"></div>
+            <div className="col-span-5">
+              <PricingCard
+                price="3,400"
+                variant="white"
+                packageName="Spectra Complete"
+                workType="UI Design & Development"
+                color="white"
+                works={[
+                  "User Research",
+                  "Market Research",
+                  "Wireframing",
+                  "Prototyping",
+                  "React Development",
+                  "Quality Assurance",
+                ]}
+              />
+            </div>
 
-              <div className="col-span-5">
-              <PricingCard  price="2,000" variant="black" packageName="Spectra Incomplete" workType="UI Design Without Development" color="white"  works={['User Research', 'Market Research', 'Wireframing', 'Prototyping', 'No React Development', 'Chorapi Nike']} />
-              </div>
-              <div className="col-span-1"></div>
+            <div className="col-span-5">
+              <PricingCard
+                price="2,000"
+                variant="black"
+                packageName="Spectra Incomplete"
+                workType="UI Design Without Development"
+                color="white"
+                works={[
+                  "User Research",
+                  "Market Research",
+                  "Wireframing",
+                  "Prototyping",
+                  "No React Development",
+                  "Chorapi Nike",
+                ]}
+              />
+            </div>
+            <div className="col-span-1"></div>
           </div>
         </div>
       </section>

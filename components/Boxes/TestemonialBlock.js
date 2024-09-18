@@ -4,12 +4,8 @@ import React, { useEffect } from 'react'
 
 const TestemonialBlock = ({key, text, client, work = [], image, position}) => {
 
-  useEffect(() => {
-    console.log(work)
-  }, [])
-
   return (
-    <div key={key} className='bg-[#EAEAEA] md:max-w-[625px] md:p-16 rounded-[32px] flex-shrink-0 w-[100%] h-full'>
+    <div key={key} className='bg-[#EAEAEA]  md:h-[603px] relative md:max-w-[625px] md:p-16 rounded-[32px] flex-shrink-0 w-[100%] h-full'>
       <h4 className='md:text-3xl text-[var(--background-black)] font-medium md:mb-6'>
     {text}
       </h4>
@@ -21,7 +17,7 @@ const TestemonialBlock = ({key, text, client, work = [], image, position}) => {
           </span>
         ))}
       </div>
-      <div className='md:mt-36 flex flex-row gap-5 items-center'>
+      <div className='absolute bottom-0 md:pb-16 flex flex-row gap-5 items-center'>
       <img className='w-20 h-20 aspect-square rounded-full' src={image} alt={"Image of " + client}/>
       <div>
         <h6 className='md:text-2xl font-semibold md:mb-1 text-[#0F1210]'>{client}</h6>
