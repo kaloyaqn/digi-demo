@@ -1,4 +1,28 @@
-const PrimaryButton = ({ children, isCta }) => {
+const PrimaryButton = ({ children, isCta, isBig }) => {
+  if (isBig) {
+    return (
+      <button className="group font-semibold text-2xl leading-[17.6px] px-12 pr-6 py-6 bg-[var(--spectra-green-light)] text-[var(--text-black)] rounded-full flex items-center gap-6 transition-transform">
+        {children}
+
+        <div className="rounded-full bg-[var(--button-black)] w-14 aspect-square flex justify-center items-center">
+          <svg
+            className="transform transition-transform duration-300 group-hover:rotate-45"
+            width="12"
+            height="11"
+            viewBox="0 0 12 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.2496 0.999933C11.2496 0.447648 10.8019 -6.77395e-05 10.2496 -6.7318e-05L1.24958 -6.75288e-05C0.697295 -6.75288e-05 0.249579 0.447648 0.249579 0.999933C0.249579 1.55222 0.697295 1.99993 1.24958 1.99993L9.24958 1.99993L9.24958 9.99993C9.24958 10.5522 9.69729 10.9999 10.2496 10.9999C10.8019 10.9999 11.2496 10.5522 11.2496 9.99993L11.2496 0.999933ZM2.70711 9.95662L10.9567 1.70704L9.54247 0.292826L1.29289 8.5424L2.70711 9.95662Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </button>
+    );
+  }
+
   return (
     <>
       {isCta ? (
@@ -7,7 +31,7 @@ const PrimaryButton = ({ children, isCta }) => {
 
           <div className="rounded-full bg-[var(--button-black)] w-10 h-10 flex justify-center items-center">
             <svg
-              className="transform transition-transform duration-300 group-hover:rotate-45"  
+              className="transform transition-transform duration-300 group-hover:rotate-45"
               width="10"
               height="10"
               viewBox="0 0 10 10"

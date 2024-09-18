@@ -1,9 +1,9 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ServiceCard from '../Boxes/ServiceCard';
 
 import "swiper/css";
+import ServiceCard from '../Boxes/ServiceCard';
 
 function ServicesCarousel({Slides, Spacing, SlidesToShow})  {
     return (
@@ -11,10 +11,10 @@ function ServicesCarousel({Slides, Spacing, SlidesToShow})  {
             {Slides.map((Slide, index) => (
                 <SwiperSlide key={index} className='!h-auto !w-[25%]'>              
                     <ServiceCard
+                    icon={Slide.icon}
                     title={Slide.title}
                     description={Slide.description}
                     tools={Slide.tools}
-                    icon={Slide.icon}
                     className="" // Увеличи ширината на картите
                     />
                 </SwiperSlide>

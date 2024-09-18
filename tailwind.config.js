@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         custom: ['Helvetica Now Display', 'sans-serif'],
+        speactraDisplay: ['Helvetica Now Display','sans-serif'],
         
       }
     },
