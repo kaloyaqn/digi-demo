@@ -8,6 +8,7 @@ import ServicesCarousel from "@/components/Carousel/ServicesCarousel";
 import PortfolioCard from "@/components/Boxes/PortfolioCard";
 import Link from "next/link";
 import TestemonialBlock from "@/components/Boxes/TestemonialBlock";
+import PricingCard from "@/components/Boxes/PricingCard";
 
 //snimki
 
@@ -147,6 +148,7 @@ export default function Home() {
 
     },
   ];
+
 
   return (
     <main className="overflow-x-hidden">
@@ -370,126 +372,11 @@ export default function Home() {
           <div class="grid grid-cols-12 gap-8">
               <div className="col-span-1"></div>
               <div className="col-span-5">
-                <div className='bg-[#EAEAEA] md:p-16 rounded-[32px] flex-shrink-0 w-full h-full text-[#0F1210]'>
-                    <div>
-                      <label className="text-2xl text-[#0F1210] opacity-[55%] tracking-[-0.75px] font-speactraDisplay font-medium">Spectra Complete</label>
-                      <h3 className="text-4xl mt-[0.25rem] tracking-[-1.25px] font-speactraDisplay font-medium">UI Design & Development</h3>
-                    </div>
-                    <hr className="border-[#0F1210] opacity-[10%] my-8"/>
-                    <div className="flex flex-wrap gap-4 mb-20">
-                        <div className="bg-[#DFE1E0] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">User Research</span>
-                        </div>
-                        <div className="bg-[#DFE1E0] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">Market Research</span>
-                        </div>
-                        <div className="bg-[#DFE1E0] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">Wireframing</span>
-                        </div>
-                        <div className="bg-[#DFE1E0] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">Prototyping</span>
-                        </div>
-                        <div className="bg-[#DFE1E0] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">React Development</span>
-                        </div>
-                        <div className="bg-[#DFE1E0] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#0F1210" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">Quality Assurance</span>
-                        </div>
-                    </div>
-                    <div className="flex justify-between items-end">
-                        <div className="flex flex-col	">
-                          <label className="text-[1.25rem] opacity-[55%] font-speactraDisplay">Starting from</label>
-                          <b className="text-6xl font-speactraDisplay font-bold tracking-[-2px]">$ 3,400</b>
-                        </div>
-                        <div className="w-[1px] h-[4rem] bg-[#0F1210] opacity-[10%]"></div>
-                        <PrimaryButton isCta>Book a call</PrimaryButton>
-                    </div>
-                </div>
+                <PricingCard  price="3,400" variant="white" packageName="Spectra Complete" workType="UI Design & Development" color="white"  works={['User Research', 'Market Research', 'Wireframing', 'Prototyping', 'React Development', 'Quality Assurance']} />
               </div>
+
               <div className="col-span-5">
-              <div className='bg-[#161917] md:p-16 rounded-[32px] flex-shrink-0 w-full h-full text-[#FFF]'>
-                    <div>
-                      <label className="text-2xl text-[#FFFFFF] opacity-[55%] tracking-[-0.75px] font-speactraDisplay font-medium">Spectra Complete</label>
-                      <h3 className="text-4xl mt-[0.25rem] tracking-[-1.25px] font-speactraDisplay font-medium">UI Design & Development</h3>
-                    </div>
-                    <hr className="border-[#FFFFFF] opacity-[10%] my-8"/>
-                    <div className="flex flex-wrap gap-4 mb-20">
-                        <div className="bg-[#222623] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">User Research</span>
-                        </div>
-                        <div className="bg-[#222623] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">Market Research</span>
-                        </div>
-                        <div className="bg-[#222623] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">Wireframing</span>
-                        </div>
-                        <div className="bg-[#222623] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">Prototyping</span>
-                        </div>
-                        <div className="bg-[#222623] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">React Development</span>
-                        </div>
-                        <div className="bg-[#222623] flex gap-[0.75rem] px-8 py-6 rounded-2xl items-center">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                            <path d="M6 9.375L9.07692 12.5L14 7.5" stroke="#FFFFFF" stroke-opacity="0.35"/>
-                          </svg>
-                          <span className="text-[1.15rem] tracking-tight">Quality Assurance</span>
-                        </div>
-                    </div>
-                    <div className="flex justify-between items-end">
-                        <div className="flex flex-col	">
-                          <label className="text-[1.25rem] opacity-[55%] font-speactraDisplay">Starting from</label>
-                          <b className="text-6xl font-speactraDisplay font-bold tracking-[-2px]">$ 3,400</b>
-                        </div>
-                        <div className="w-[1px] h-[4rem] bg-[#0F1210] opacity-[10%]"></div>
-                        <PrimaryButton isCta>Book a call</PrimaryButton>
-                    </div>
-                </div>
+              <PricingCard  price="2,000" variant="black" packageName="Spectra Incomplete" workType="UI Design Without Development" color="white"  works={['User Research', 'Market Research', 'Wireframing', 'Prototyping', 'No React Development', 'Chorapi Nike']} />
               </div>
               <div className="col-span-1"></div>
           </div>
