@@ -10,6 +10,7 @@ import Link from "next/link";
 import TestemonialBlock from "@/components/Boxes/TestemonialBlock";
 import PricingCard from "@/components/Boxes/PricingCard";
 import TestemonialCarousel from "@/components/Carousel/TestemonialCarousel";
+import Label from "@/components/Boxes/Label";
 
 //snimki
 const features = [
@@ -150,6 +151,29 @@ const testemonials = [
     work: ["UI/UX Design", "Marketing"],
     client: "Nikolay Vasilev",
     position: "CEO @ Loop Marketing Agency",
+  },
+];
+
+const footerLinks = [
+  {
+    text: "Dribbble",
+    link: "https://fb.com",
+  },
+  {
+    text: "Facebook",
+    link: "https://fb.com",
+  },
+  {
+    text: "Behance",
+    link: "https://fb.com",
+  },
+  {
+    text: "Awwwards",
+    link: "https://fb.com",
+  },
+  {
+    text: "Instagram",
+    link: "https://fb.com",
   },
 ];
 export default function Home() {
@@ -364,6 +388,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <footer className="bg-[var(--background-gray)] section-padding rounded-t-[60px]">
+        <div className="container mx-auto">
+          <img src="../images/spectra-footer.svg" />
+          <h2 className="md:text-5xl md:mt-12 font-medium font-spectraDisplay">
+            Front-end & Design Agency
+          </h2>
+          <hr className="md:my-16" />
+          <h3 className="md:text-3xl">Lets talk about your ideas.</h3>
+          <div className="md:mt-6 flex justify-between items-end">
+            <a
+              href="mailto:welcome@spectra.agency"
+              className="md:text-5xl font-spectraDisplay md:leading-[58.8px] font-medium"
+            >
+              <span className="text-white opacity-55">welcome</span> <br />
+              @spectra.agency
+            </a>
+
+            <div className="flex flex-wrap justify-end gap-4 md:max-w-[490px]">
+              {footerLinks.map((footerLink, index) => (
+                <Link href={footerLink} key={index} className="inline-flex">
+                  <Label variant="footer">{footerLink.text}</Label>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

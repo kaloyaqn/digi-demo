@@ -67,6 +67,7 @@ span, small {
   font-weight: 300;
 }
 
+
 hr {
   border: 1px solid #ffffff1a;
 }
@@ -131,5 +132,5 @@ p {
 
 
 .explore-cursor {
-  cursor: url("../public/explore-cursor.png"); /* Use your cursor image here */
+  cursor: url("../public/explore-cursor.png"); 
 }
